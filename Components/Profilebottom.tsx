@@ -8,14 +8,17 @@ const Profilebottom = () => {
   function Achivements() {
     return (
       <View
-        style={{ flex: 1, alignItems: "center", backgroundColor: "#181818" }}
+        style={{ flex: 1, alignItems:'center', backgroundColor: "#181818", }}
       >
+        <View style ={{ alignItems:'center'}}>
+
         <Text
           style={{
             marginTop: 28,
             fontWeight: "400",
             fontSize: 18,
             color: "#fff",
+           
           }}
         >
           Let's do this! Play some games to level
@@ -23,6 +26,22 @@ const Profilebottom = () => {
         <Text style={{ fontWeight: "400", fontSize: 18, color: "#fff" }}>
           up.
         </Text>
+
+<View style ={{flexDirection:'row', marginTop:20,backgroundColor:'#383838',borderRadius:15,}}>
+  <Text style={{ backgroundColor:'#2C7744', borderRadius:50,paddingHorizontal:15,paddingVertical:4}}>1</Text>
+  <Text style={{marginLeft:250, marginRight:10,marginTop:3}}>2</Text>
+</View>
+
+
+<View style={{flexDirection:'row',marginTop:10,}}>
+
+  <Text  style ={{color:'#2C7744'}}>1,000 XP</Text>
+  <Text style ={{color:'#8d8d8d'}}>  TO LEVEL 2</Text>
+</View>
+
+        </View>
+
+
       </View>
     );
   }
@@ -37,6 +56,7 @@ const Profilebottom = () => {
           <View style ={{marginTop:17,flexDirection:"row",justifyContent:'space-between', borderWidth:1.5,borderRadius:25,borderColor:"#8d8d8d",padding:7,marginLeft:30, marginRight:30}}>
               <TextInput
               placeholder="Search for players"
+              
               />
               <EvilIcons name="search" size={24} color="#8d8d8d" style ={{marginTop:4}}/>
           </View>
@@ -71,6 +91,8 @@ const Profilebottom = () => {
             
           />
           </View>
+         
+
       </View>
     );
   }
